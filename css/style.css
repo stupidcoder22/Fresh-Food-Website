@@ -44,6 +44,10 @@
   box-sizing: border-box;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+}
+
 .container {
   width: 100%;
   border: 1px solid red;
@@ -73,4 +77,39 @@
   .container {
     max-width: 1152px;
   }
+}
+
+header.topbar {
+  background-color: var(--secondary);
+  color: var(--pure);
+  font-family: "Raleway-semibold";
+  padding: 0.75rem 0;
+}
+
+header.topbar .icons a {
+  margin-right: 0.6rem;
+}
+
+header.topbar .auth > div img {
+  margin-right: 0.35rem;
+}
+
+.divider {
+  margin: 0 1rem;
+}
+
+header.topbar .auth > div a {
+  color: var(--pure);
+  text-decoration: none;
+}
+
+header.topbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header.topbar .container .auth {
+  display: flex;
+  align-items: center;
 }
