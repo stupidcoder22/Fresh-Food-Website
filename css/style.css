@@ -1,24 +1,30 @@
 /* fonts */
+
 @font-face {
   font-family: "Raleway-regular";
   src: url(../fonts/Raleway-Regular.ttf);
 }
+
 @font-face {
   font-family: "Raleway-medium";
   src: url(../fonts/Raleway-Medium.ttf);
 }
+
 @font-face {
   font-family: "Raleway-bold";
   src: url(../fonts/Raleway-Bold.ttf);
 }
+
 @font-face {
   font-family: "Raleway-extrabold";
   src: url(../fonts/Raleway-ExtraBold.ttf);
 }
+
 @font-face {
   font-family: "Raleway-semibold";
   src: url(../fonts/Raleway-SemiBold.ttf);
 }
+
 @font-face {
   font-family: "Raleway-black";
   src: url(../fonts/Raleway-Black.ttf);
@@ -38,6 +44,7 @@
 }
 
 /* Reset  */
+
 * {
   padding: 0;
   margin: 0;
@@ -50,7 +57,6 @@ body {
 
 .container {
   width: 100%;
-  border: 1px solid red;
   padding: 0 15px;
   margin: 0 auto;
 }
@@ -125,10 +131,15 @@ header.topbar .container {
   align-items: center;
 }
 
+.text-center {
+  text-align: center;
+}
+
 header.topbar .container .auth {
   display: flex;
   align-items: center;
 }
+
 nav .top {
   padding: 1.5rem 0;
 }
@@ -195,13 +206,16 @@ header.hero {
   background-position: 0% 0%;
   overflow: hidden;
 }
+
 header.hero .container {
   position: relative;
   /* overflow: hidden; */
 }
+
 header.hero .welcome {
   margin-bottom: 0.25rem;
 }
+
 header.hero .welcome span {
   font-family: "Raleway-bold";
   color: var(--secondary);
@@ -226,8 +240,8 @@ header.hero p {
 }
 
 .btn {
-  padding: 0.75rem 0.75rem;
   border: 1px solid transparent;
+  padding: 0.75rem 0.75rem;
   border-radius: 4px;
   line-height: 0.8;
   font-size: 1.2rem;
@@ -265,4 +279,155 @@ header.hero .hero-image img {
   position: absolute;
   top: -40px;
   right: 40px;
+}
+
+section {
+  padding: 4rem 0;
+}
+
+section.top-products {
+  background: var(--light);
+}
+
+.section-heading {
+  font-family: "Raleway-bold";
+  text-align: center;
+  margin-bottom: 4rem;
+  position: relative;
+}
+
+.section-heading::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-image: url("../icons/hr.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  position: absolute;
+  bottom: -40px;
+}
+
+section.top-products .food-slider .food-card {
+  border: 1px solid #000;
+  background: var(--heaven);
+  padding: 1.5rem 0;
+  border-radius: 4px;
+}
+
+section.top-products .food-slider .food-card .product-image img {
+  width: 80%;
+  height: 200px;
+  padding: 1rem;
+  object-fit: contain;
+}
+
+section.top-products .food-slider .food-card h2 {
+  margin-right: 0.25rem;
+  font-size: 1.3rem;
+  margin-bottom: 0.25rem;
+}
+
+section.top-products .food-slider .food-card .stars img {
+  margin-right: 0.25rem;
+}
+
+hr {
+  border: 1px solid var(--light);
+  opacity: 0.8;
+  margin: 1rem 0;
+}
+
+section.top-products .food-slider .food-card .price {
+  font-family: "Raleway-medium";
+  color: var(--danger);
+  margin-bottom: 1rem;
+}
+
+section.top-products .food-slider .food-card .stars {
+  margin-bottom: 0.4rem;
+}
+
+section.top-products .food-slider .food-card button {
+  font-family: "Raleway-medium";
+  color: var(--secondary);
+  background: var(--heaven);
+  border: 2px solid var(--primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  width: 50%;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+section.top-products .food-slider .food-card button img {
+  background: var(--primary);
+  padding: 0.5rem;
+  height: 32px;
+  margin-right: 1.2rem;
+}
+section.top-products .food-slider .food-card button:hover {
+  background: var(--primary);
+  color: white;
+}
+.slick-slide {
+  margin: 0 27px;
+}
+
+.slick-list {
+  margin: 0 -27px;
+}
+.slick-track {
+  padding: 1rem 0;
+}
+
+section.top-products .slider-btn {
+  width: 30px;
+  height: 30px;
+  border: none;
+  background: var(--primary);
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.prev-btn {
+  position: absolute;
+  top: 46%;
+  left: -3rem;
+  z-index: 1;
+}
+
+.next-btn {
+  position: absolute;
+  top: 46%;
+  right: -3rem;
+  z-index: 1;
+}
+
+section.top-products .slider {
+  position: relative;
+}
+
+.top-products .btn-wrapper {
+  margin-top: 2rem;
+}
+.magic-shadow-sm {
+  position: relative;
+  background: var(--heaven);
+}
+
+.magic-shadow-sm::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 69px;
+  background: url("../icons/shadow-sm.svg ");
+  bottom: -25px;
+  background-position: center;
+  position: absolute;
+  z-index: -1;
+  background-repeat: no-repeat;
 }
