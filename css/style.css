@@ -453,3 +453,43 @@ section.about-meal p {
   margin-bottom: 1.8rem;
   line-height: 1.7;
 }
+
+section.our-services {
+  background: var(--light);
+}
+
+section.our-services .service-card .card-wrapper {
+  margin-right: -2rem;
+  margin-top: 8rem;
+}
+
+section.our-services .service-card {
+  background: var(--heaven);
+  text-align: center;
+  margin-right: 2rem;
+  padding: 2rem;
+  padding-top: 4rem;
+  border-radius: 4px;
+  position: relative;
+}
+section.our-services .service-card img {
+  position: absolute;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+section.our-services .service-card h2 {
+  font-family: "Raleway-bold";
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+section.our-services .service-card p {
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.text-primary {
+  color: var(--primary);
+}
