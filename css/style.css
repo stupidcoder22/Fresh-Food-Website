@@ -559,7 +559,7 @@ section.latest-news {
 }
 
 section.latest-news .article-wrapper {
-    margin-right: -2rem;
+  margin-right: -2rem;
   display: flex;
   justify-content: center;
 }
@@ -586,6 +586,67 @@ section.latest-news .article-wrapper {
   line-height: 1.6;
 }
 
-.latest-news .btn-wrapper{
+.latest-news .btn-wrapper {
   margin-top: 2rem;
+}
+
+section.subscribe {
+  background: var(--primary);
+}
+
+section.subscribe h1{
+  font-family: 'Raleway-bold';
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+section.subscribe p{
+  font-family: 'Raleway-medium';
+  font-size: 1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+section.subscribe .input-wrap{
+  background-color: var(--heaven);
+  display: flex; 
+  padding: 0.3rem;
+  border-radius: 4px;
+}
+
+section.subscribe .input-wrap input{
+  width: 100%;
+  border: none;
+  padding: 0 1rem;
+  font-size: 1rem;
+}
+
+section.subscribe .input-wrap input:focus{
+  outline: none;
+}
+
+section.subscribe .input-wrap button{
+  padding: 0.8rem ;
+  border: none;
+  background-color: var(--primary);
+  color: var(--pure);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all .3s ease;
+  outline: none;
+}
+
+section.subscribe .input-wrap button:hover{
+  background-color: var(--secondary);
+}
+section.subscribe .container > div:first-child img {
+  width: 90%;
+}
+
+section.subscribe .container > div:first-child {
+  flex: 1;
+}
+
+section.subscribe .container > div:last-child {
+  flex: 1;
 }
